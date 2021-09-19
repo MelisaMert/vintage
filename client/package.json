@@ -1,0 +1,20 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "next": "^11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "styled-jsx-plugin-sass": "^1.0.0"
+  }
+}
