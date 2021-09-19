@@ -1,14 +1,10 @@
-import Link from 'next/link';
 import Head from 'next/head';
 
 export default function Home() {
     return <>
         <Head>
-            <title>Blog</title>
+            <title>Home</title>
         </Head>
-        <h3>Blog Page</h3>
-        <Link href="/">
-            Back
-        </Link>
+        <h3>Home</h3>
     </>
 }

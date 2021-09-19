@@ -1,6 +1,20 @@
 import Link from 'next/link';
+import Search from "@material-ui/icons/Search";
+import TextField from '@mui/material/TextField';
 
 export default function Header() {
+
+    const searchBar = () => {
+        return (<>
+            <TextField 
+               id="outlined-basic" 
+               label={<Search/>} 
+               variant="outlined" 
+               size="small"
+            />
+        </>)
+    }
+
     return <header className="header">
         <nav>
             <ul>
@@ -11,18 +25,26 @@ export default function Header() {
                 </li>
                 <li>
                     <Link href="/about">
-                      <a>ABOUT</a>  
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/vintage">
-                       <a>VINTAGE</a> 
+                        <a>ABOUT</a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/contact">
-                       <a>CONTACT</a>
+                        <a>CONTACT</a>
                     </Link>
+                </li>
+                <li>
+                    <Link href="/vintage">
+                        <a>VINTAGE</a>
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/chiefs">
+                        <a>CHIEFS</a>
+                    </Link>
+                </li>
+                <li>
+                    <a>{searchBar()}</a>
                 </li>
             </ul>
         </nav>

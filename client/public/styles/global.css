@@ -11,5 +11,6 @@ html,body {
 }
 
 body {
-  background: #ddd;
+  font-family: "Lucida Console", Courier, monospace;
+  /* background: #ddd; */
 }

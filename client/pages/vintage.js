@@ -1,7 +1,12 @@
+import Head from 'next/head';
+
 export default function Vintage(){
     return (
         <>
-          <p>Vintage</p>
+         <Head>
+            <title>Vintage</title>
+        </Head>
+          <h3>Vintage</h3>
         </>
     )
 }
