@@ -1,0 +1,23 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    ul {
+       display: flex;
+       width: 70%;
+       margin: auto;
+       li {
+           color:red;
+           a {
+             display: flex;
+             height: 60px;
+             align-items: center;
+             padding: 0 40px;
+             color: #333;
+             font-size: 18px;
+             font-family: "Lucida Console", Courier, monospace;
+             text-decoration: none;
+           }
+       }
+    }
+} 

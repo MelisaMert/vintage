@@ -4,6 +4,7 @@
     list-style: none;
     border: 0;
     box-sizing: border-box;
+    margin-bottom: 5px;
 }
 
 html,body {
@@ -12,5 +13,5 @@ html,body {
 
 body {
   font-family: "Lucida Console", Courier, monospace;
-  /* background: #ddd; */
 }
+

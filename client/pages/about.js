@@ -10,6 +10,8 @@ export default function About() {
         <Link href="/">
             Back
         </Link>
+
+
      
         <style jsx>{`
              h3 {

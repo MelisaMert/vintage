@@ -1,21 +1,10 @@
 import Link from 'next/link';
-import Search from "@material-ui/icons/Search";
-import TextField from '@mui/material/TextField';
+import classes from '../public/styles/header.module.scss';
+// import Search from '../components/search'
 
 export default function Header() {
 
-    const searchBar = () => {
-        return (<>
-            <TextField 
-               id="outlined-basic" 
-               label={<Search/>} 
-               variant="outlined" 
-               size="small"
-            />
-        </>)
-    }
-
-    return <header className="header">
+    return <header className={classes.header}>
         <nav>
             <ul>
                 <li>
@@ -44,33 +33,9 @@ export default function Header() {
                     </Link>
                 </li>
                 <li>
-                    <a>{searchBar()}</a>
+                    {/* <a>{<Search/>}</a> */}
                 </li>
             </ul>
         </nav>
-        <style jsx>{`
-             .header {
-                background: #fff;
-                border-bottom: 1px solid #ccc;
-                ul {
-                   display: flex;
-                   width: 70%;
-                   margin: auto;
-                   li {
-                       color:red;
-                       a {
-                         display: flex;
-                         height: 60px;
-                         align-items: center;
-                         padding: 0 40px;
-                         color: #333;
-                         font-size: 18px;
-                         font-family: "Lucida Console", Courier, monospace;
-                         text-decoration: none;
-                       }
-                   }
-                }
-            } 
-        `}</style>
     </header>
 }
