@@ -1,15 +1,12 @@
 import React from 'react';
 import Link from "next/Link";
 
-
 const Post = ({post}) => {
     return (<>  
             <Link href={`/posts/${post.id}`}>
               <a className="card">
                <h3>{post.title}</h3>
               </a>
-       
-            {/* <p>{post.body}</p> */}
              </Link>
 
       <style jsx>
@@ -27,7 +24,6 @@ const Post = ({post}) => {
           }  
         `}        
         </style>
-    
     </>)
 }
 
