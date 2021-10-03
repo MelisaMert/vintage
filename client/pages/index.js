@@ -1,10 +1,14 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-export default function Home() {
-    return <>
-        <Head>
-            <title>Home</title>
-        </Head>
-        <h3>Home</h3>
-    </>
+export default function Home({posts}){
+  return(
+    <div>
+    <Head>
+      <title>Home</title>
+      <link rel="icon"  href="/vercel.svg"/>
+    </Head>
+    <p>Welcome to Vintage App</p>
+    </div>
+  )
 }
+

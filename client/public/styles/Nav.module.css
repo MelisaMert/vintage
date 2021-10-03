@@ -1,0 +1,28 @@
+.nav {
+    height: 50px;
+    padding: 15px;
+    background: #181818;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.nav ul li a {
+    margin: 10px 15px;
+    color:whitesmoke;
+    text-decoration: none
+}
+
+.nav ul li a span {
+    color: darkgray;
+    font-size: 25px;
+}

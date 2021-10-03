@@ -1,10 +1,14 @@
-import Header from '../components/header';
-import  '../public/styles/global.css';
+import Header from '../components/Header';
+import Layout from '../components/Layout'
+import '../public/styles/global.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-export default function App({Component, pageProps}) {
+// Global css import
+// Application Page Returns
+export default function App({ Component, pageProps }) {
     return <>
-       <Header />
-       <Component {...pageProps} />
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
     </>
 }

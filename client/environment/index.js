@@ -1,0 +1,1 @@
+export const URL = process.env.NODE_ENV ===  "production" ? "https://nodejs.org/en/docs/" : "http://localhost:3000";
