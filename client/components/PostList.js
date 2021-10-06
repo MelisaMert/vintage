@@ -3,7 +3,7 @@ import Post from './Post'
 
 const PostList = ({posts}) => {
     return ( <>
-        <div  key= {"p"} className="grid">
+        <div key= {"p"} className="grid">
         {posts.map(post => (
              <Post post={post} />
         ))}
