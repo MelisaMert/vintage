@@ -22,7 +22,7 @@ Server side ops.
 export const getStaticProps = async () => {
     let posts;
     try {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5');
+        const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=15');
         posts = response.data;
     } catch (e) {
         throw e;

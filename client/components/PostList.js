@@ -1,27 +1,19 @@
+import Grid from '@mui/material/Grid';
 import React from 'react';
 import Post from './Post'
 
 const PostList = ({posts}) => {
-    return ( <>
-        <div key= {"p"} className="grid">
-        {posts.map(post => (
-             <Post post={post} />
-        ))}
-        </div> 
-        
-        <style jsx>
-        {`
-          .grid {
-            display: flex;
-            align-items: center;
-            justif-content: center;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin-top: 3rem;
-          }  
-        `}        
-        </style>
-   </> )
+    return ( 
+       <>
+        <Grid container>
+          {
+            posts.map(post => (
+              <Grid id={post.id} item xs={5} md={4}>
+                 <Post post={post} />
+              </Grid>
+          ))}
+        </Grid>
+   </>)
 }
 
 export default PostList;

@@ -19,7 +19,7 @@ export default function Comments({comments}){
 export const getStaticProps = async() => {
    let comments;
    try{
-      const response = await axios.get('https://jsonplaceholder.typicode.com/comments?_limit=5')
+      const response = await axios.get('https://jsonplaceholder.typicode.com/comments?_limit=10')
       comments = response.data;
    }catch(e){
        throw e;
